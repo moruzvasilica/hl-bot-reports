@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "run_id": null,
+  "timestamp_utc": null,
+  "strategy": "TR-F5-Crypto-LS-1H-03",
+  "version": "6.4",
+  "bot_id": 27127,
+
+  "status": "WAITING_FOR_FIRST_RUN",
+  "trading_block_status": "CLEAR",
+
+  "account": {
+    "nav_usdc": 0,
+    "free_usdc": 0,
+    "used_collateral_usdc": 0,
+    "unrealized_pnl_usdc": 0,
+    "positions_count": 0,
+    "gross_exposure_pct": 0,
+    "long_exposure_pct": 0,
+    "short_exposure_pct": 0
+  },
+
+  "market": {
+    "btc_price": null,
+    "btc_regime": "UNAVAILABLE",
+    "mode": "UNAVAILABLE",
+    "breadth_green_pct": null
+  },
+
+  "relay": {
+    "health": "unavailable",
+    "manifest_ok": false,
+    "manifest_age_minutes": null,
+    "files_ok": 0,
+    "files_expected": 0
+  },
+
+  "summary": {
+    "headline": "Waiting for the first bot report.",
+    "description": "No automated run has been written to GitHub yet.",
+    "assets_checked": 0,
+    "candidates_evaluated": 0,
+    "entries_opened": 0,
+    "positions_closed": 0,
+    "main_reason": "No report available."
+  },
+
+  "prices": [],
+  "positions": [],
+  "actions": [],
+  "decisions": []
+}
