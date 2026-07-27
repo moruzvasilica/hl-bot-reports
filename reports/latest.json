@@ -1,110 +1,52 @@
 {
-  "run_id": "TR-F5-1H-03-TEST-20260725T004000Z",
-  "timestamp_utc": "2026-07-25T00:40:00Z",
+  "schema": 1,
+  "run_id": null,
+  "timestamp_utc": null,
   "strategy": "TR-F5-Crypto-LS-1H-03",
+  "version": "6.4",
   "bot_id": 27127,
-  "version": "4.0",
+
+  "status": "WAITING_FOR_FIRST_RUN",
+  "trading_block_status": "CLEAR",
+
   "account": {
-    "nav": 292.74,
-    "collateral_free": 249.43,
-    "currency": "USDC"
+    "nav_usdc": 0,
+    "free_usdc": 0,
+    "used_collateral_usdc": 0,
+    "unrealized_pnl_usdc": 0,
+    "positions_count": 0,
+    "gross_exposure_pct": 0,
+    "long_exposure_pct": 0,
+    "short_exposure_pct": 0
   },
+
+  "market": {
+    "btc_price": null,
+    "btc_regime": "UNAVAILABLE",
+    "mode": "UNAVAILABLE",
+    "breadth_green_pct": null
+  },
+
   "relay": {
-    "age_minutes": 45,
-    "manifest_ok": true,
-    "latest_candle": "2026-07-24T23:00:00Z"
+    "health": "unavailable",
+    "manifest_ok": false,
+    "manifest_age_minutes": null,
+    "files_ok": 0,
+    "files_expected": 0
   },
-  "regime": {
-    "btc": "NEUTRAL",
-    "detail": "4H: close>EMA200 & EMA50>EMA200, but 1H EMA20<EMA50 — not fully aligned",
-    "eligible_tiers": ["R3", "R5"]
+
+  "summary": {
+    "headline": "Waiting for the first bot report.",
+    "description": "No automated run has been written to GitHub yet.",
+    "assets_checked": 0,
+    "candidates_evaluated": 0,
+    "entries_opened": 0,
+    "positions_closed": 0,
+    "main_reason": "No report available."
   },
-  "gc_states": {
-    "BTC": "Red",
-    "ETH": "Red",
-    "BNB": "Red",
-    "XRP": "Red",
-    "SOL": "Red",
-    "TRX": "Red",
-    "HYPE": "Green",
-    "DOGE": "Red"
-  },
-  "breadth": {
-    "green_pct": 12,
-    "green_count": 1,
-    "total_count": 8
-  },
-  "universe": {
-    "count": 8,
-    "assets": ["BTC", "ETH", "BNB", "XRP", "SOL", "TRX", "HYPE", "DOGE"],
-    "excluded_notes": "ranks 3,5 are stablecoins"
-  },
-  "limits": {
-    "daily_entries_used": 1,
-    "daily_entries_max": 6,
-    "daily_losses_used": 0,
-    "daily_losses_max": 3
-  },
-  "funding_rates_per_hour": {
-    "BTC": 0.00125,
-    "ETH": 0.00125,
-    "BNB": 0.00125,
-    "XRP": 0.00078,
-    "SOL": -0.00027,
-    "TRX": 0.00123,
-    "HYPE": 0.00125,
-    "DOGE": -0.00187
-  },
-  "positions": [
-    {
-      "asset": "HYPE",
-      "direction": "SHORT",
-      "size": 0.75,
-      "entry_price_est": 58.33,
-      "current_pnl_pct": 1.02,
-      "attributed_to": "this_strategy",
-      "opened_utc": "2026-07-23T19:05:00Z",
-      "stop_loss": 58.83,
-      "target": 54.99,
-      "time_stop_utc": "2026-07-24T07:05:00Z",
-      "gc_agrees": false,
-      "risk_tier": "GC-Disagree",
-      "notes": "GC Green vs short — tightened stop to entry+0.3R"
-    }
-  ],
-  "trades_this_run": {
-    "count": 0,
-    "actions": []
-  },
-  "candidates_rejected": [
-    {
-      "asset": "DOGE",
-      "direction": "SHORT",
-      "setup": "Pullback",
-      "reason": "1H RSI 25.75 (need 30-52, oversold)",
-      "gc_agrees": true
-    },
-    {
-      "asset": "BNB",
-      "direction": "SHORT",
-      "setup": "Pullback",
-      "reason": "volume 0.27x avg20 (need 1.05x)",
-      "gc_agrees": true
-    }
-  ],
-  "breakout_revalidation_cancels": 0,
-  "gc_disagree_evaluated": 1,
-  "gc_disagree_taken": 0,
-  "flags": {
-    "attention_needed": false,
-    "new_trade": false,
-    "position_closed": false,
-    "stop_hit": false,
-    "target_hit": false,
-    "time_stop_triggered": false,
-    "circuit_breaker": false,
-    "relay_stale": false,
-    "management_only": false
-  },
-  "summary": "TEST REPORT. No trades executed. HYPE SHORT active +1.02%."
+
+  "prices": [],
+  "positions": [],
+  "actions": [],
+  "decisions": []
 }
